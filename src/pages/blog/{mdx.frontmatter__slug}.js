@@ -5,15 +5,19 @@ import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const BlogPost = ({ data, children }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
     <p>Posted: {data.mdx.frontmatter.date}</p>
-    <GatsbyImage
-      image={image}
-      alt={data.mdx.frontmatter.hero_image_alt}
-    />
+    {data.mdx.frontmatter.images.map((file, index) => {
+          const image = getImage(file)
+
+          return (
+            <GatsbyImage
+            image={image}
+          />
+          )
+        })}
     {children}
   </Layout>
   )
@@ -26,7 +30,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
-        hero_image {
+        images {
           childImageSharp {
             gatsbyImageData
           }
