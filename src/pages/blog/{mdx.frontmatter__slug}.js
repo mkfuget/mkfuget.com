@@ -4,21 +4,28 @@ import Seo from '../../components/seo'
 import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
+import {
+  gallery,
+} from '../../components/gallery.module.css'
+
+
 const BlogPost = ({ data, children }) => {
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-    <p>Posted: {data.mdx.frontmatter.date}</p>
+    <Layout classNamepageTitle={data.mdx.frontmatter.title}>
+    {children}
     {data.mdx.frontmatter.images.map((file, index) => {
           const image = getImage(file)
 
           return (
-            <GatsbyImage
-            image={image}
-          />
+            <div className={gallery}>
+                <GatsbyImage
+                  image={image}
+                  alt=""
+              />
+            </div>
           )
         })}
-    {children}
   </Layout>
   )
 }

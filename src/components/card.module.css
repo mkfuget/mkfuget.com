@@ -1,0 +1,32 @@
+.card {
+    border-width: 0px 0px 3px 0px; /* Top, Right, Bottom, Left */
+    border-style: solid; /* Applies solid style to all borders */
+    padding:10px;
+    border-color: rgb(120, 120, 120);
+    overflow: auto;
+
+  }
+
+  .card:hover {
+    background-color: rgb(232, 232, 232);
+  }
+
+  .card-title {
+    text-decoration: none;
+  }
+
+  .card-text {
+    text-decoration: none;
+  }
+
+  .card-image {
+    float: left;
+    padding: 4px;
+    max-width: 240px;
+  }
+
+  .card-content {
+    text-decoration: none;
+    color: black;
+  }
+

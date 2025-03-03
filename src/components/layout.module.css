@@ -1,23 +1,33 @@
+
 .container {
     margin: auto;
-    max-width: 1200px;
+    max-width: 600px;
     font-family: sans-serif;
   }
   
-  .heading {
-    color: rebeccapurple;
-  }
   .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+  
   .nav-link-item {
-    padding-right: 2rem;
+    float: left;
   }
+
+  .nav-link-item:hover {
+    background-color: #111;
+  }
+ 
   .nav-link-text {
-    color: black;
-  }
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
 
   .site-title {
     font-size: 3rem;
@@ -25,4 +35,5 @@
     font-weight: 700;
     margin: 3rem 0;
   }
+  
   
