@@ -1,31 +1,38 @@
 .card {
-    border-width: 0px 0px 3px 0px; /* Top, Right, Bottom, Left */
+    border-width: 0px 0px 2px 0px; /* Top, Right, Bottom, Left */
     border-style: solid; /* Applies solid style to all borders */
     padding:10px;
     border-color: rgb(120, 120, 120);
-    overflow: auto;
-
+    margin-bottom: 6px;
+    max-width: 500px;
   }
 
   .card:hover {
+    text-decoration: none;
     background-color: rgb(232, 232, 232);
   }
 
   .card-title {
     text-decoration: none;
-  }
+    text-align: center;
+    font-weight: 800;
+    font-size: x-large;
+}
 
   .card-text {
-    text-decoration: none;
+    text-decoration: none !important;
+  }
+
+  .card-text:active .card-text:link .card-text:hover .card-text:visited {
+    text-decoration-line: none !important;
   }
 
   .card-image {
-    float: left;
-    padding: 4px;
-    max-width: 240px;
+    margin-bottom: 24px; /* Add margin for spacing */
   }
 
   .card-content {
+    margin: 4px; /* Add margin for spacing */  
     text-decoration: none;
     color: black;
   }

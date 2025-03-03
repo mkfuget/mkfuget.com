@@ -66,20 +66,20 @@ const BlogPage = ({ data }) => {
 
           return ( 
             <article key={node.id}>
-                <Link to={`/blog/${node.frontmatter.slug}`}>
                   <div className={card}>
                     <div className={cardImage}>
-                        <GatsbyImage 
-                          image={image}
-                          alt=""
-                        />
+                        <Link to={`/blog/${node.frontmatter.slug}`}>
+                          <GatsbyImage 
+                            image={image}
+                            alt=""
+                          />
+                        </Link>
                       </div>
                     <div className={cardContent}>
                       <div className={cardTitle}>{node.frontmatter.title}</div>
                       <p className={cardText}>{node.excerpt}</p>
                     </div>
                   </div>
-                </Link>
             </article>
           )
         })}
