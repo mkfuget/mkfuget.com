@@ -8,6 +8,7 @@ import {
   navLinkItem,
   navLinkText,
   heading,
+  site,
 } from './layout.module.css'
 
 // ... import statements
@@ -24,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
     `)
   
     return (
-    <div>
+    <div className={site}>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
