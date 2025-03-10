@@ -4,12 +4,11 @@
     padding:10px;
     border-color: rgb(120, 120, 120);
     margin-bottom: 6px;
-    max-width: 500px;
   }
 
   .card:hover {
     text-decoration: none;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(146, 139, 139);
   }
 
   .card-title {

@@ -1,5 +1,4 @@
 .site {
-    background-color: #ecefef;
     margin: 0;
     padding: 0;  
   }
@@ -8,9 +7,19 @@
   .container {
     margin: auto;
     max-width: 600px;
-    font-family: sans-serif;
+    font-family: Montserrat;
+    color: #4b4b4b;
+    font-size:larger
   }
   
+  .heading {
+    font-size: xx-large;
+    font-weight: 1800;
+    font-family: merriweather;
+    text-align: center;
+    color: rgb(10, 10, 10);
+  }
+
   .nav-links {
     list-style-type: none;
     margin: 0;
@@ -22,6 +31,9 @@
   .nav-link-item {
     float: left;
   }
+  .nav-link-item-active {
+    background-color: #861c1c;
+  }
 
   .nav-link-item:hover {
     background-color: #111;
@@ -31,6 +43,7 @@
     display: block;
     color: white;
     text-align: center;
+    font-size: x-large;
     padding: 14px 16px;
     text-decoration: none;
     }

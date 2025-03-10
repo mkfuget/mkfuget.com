@@ -14,49 +14,6 @@ import {
 
 
 const BlogPage = ({ data }) => {
-//  const [currentIndex, setCurrentIndex] = useState(0);
-//  const [isFullScreen, setIsFullScreen] = useState(false);
-
-  // const handleFullScreen = (index) => {
-  //   setCurrentIndex(index);
-  //   setIsFullScreen(true);
-  // };
-
-  // const handleSwipe = (direction) => {
-  //   if (direction === 'left') {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-  //   } else if (direction === 'right') {
-  //     setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
-  //   }
-  // };
-
-  // const handleTouchStart = (event) => {
-  //   const touch = event.touches[0];
-  //   const startX = touch.clientX;
-  //   const startY = touch.clientY;
-
-  //   const handleTouchMove = (event) => {
-  //     const touch = event.touches[0];
-  //     const currentX = touch.clientX;
-  //     const currentY = touch.clientY;
-
-  //     if (Math.abs(currentX - startX) > Math.abs(currentY - startY)) {
-  //       if (currentX - startX > 50) {
-  //         handleSwipe('right');
-  //       } else if (startX - currentX > 50) {
-  //         handleSwipe('left');
-  //       }
-  //     }
-  //   };
-
-  //   const handleTouchEnd = () => {
-  //     document.removeEventListener('touchmove', handleTouchMove);
-  //     document.removeEventListener('touchend', handleTouchEnd);
-  //   };
-
-  //   document.addEventListener('touchmove', handleTouchMove);
-  //   document.addEventListener('touchend', handleTouchEnd);
-  // };
 
   return (
     <Layout pageTitle="My Blog Posts">

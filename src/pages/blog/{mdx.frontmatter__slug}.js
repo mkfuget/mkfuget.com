@@ -12,7 +12,7 @@ import {
 const BlogPost = ({ data, children }) => {
 
   return (
-    <Layout classNamepageTitle={data.mdx.frontmatter.title}>
+    <Layout pageTitle={data.mdx.frontmatter.title}>
     {children}
     {data.mdx.frontmatter.images.map((file, index) => {
           const image = getImage(file)

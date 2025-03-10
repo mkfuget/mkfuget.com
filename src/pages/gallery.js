@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="Bio">
-      <p>This website is mostly for sharing my undersea photography work with as broad an auidence I can.</p>
+    <Layout pageTitle="Gallery">
+      <p>This page is a work in progress but I would like to have it </p>
     </Layout>
   )
 }
