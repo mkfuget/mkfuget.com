@@ -41,7 +41,7 @@ import {
 const BlogPage = ({ data }) => {
 
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="My Dive Sites">
 
         {data.allMdx.nodes.map((node) => {
           const image = getImage(node.frontmatter.hero_image)
