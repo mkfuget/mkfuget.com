@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="Bio">
       <p>This website is mostly for sharing my undersea photography work with as broad an audience I can. Hoping to 
-        improve my abilities over time while also seeing a lot of 
+        improve my abilities over time while also seeing a lot of fascinating sealife.
       </p>
       <p>Also works as documentation of my travelling and what different enviroments I have dove and shot photos in. 
         Long-term I think it would be cool to also include a full gallery of all my photos including ways to filter down to 
