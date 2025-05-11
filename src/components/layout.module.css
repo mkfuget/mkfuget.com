@@ -18,6 +18,9 @@
     font-family: merriweather;
     text-align: center;
     color: rgb(10, 10, 10);
+    border-width: 0px 0px 2px 0px; /* Top, Right, Bottom, Left */
+    border-color: rgb(120, 120, 120);
+
   }
 
   .nav-links {
